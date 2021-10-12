@@ -1,68 +1,123 @@
 body {
     margin: 0;
-    background-color: #36213e;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    color: rgb(39, 39, 39);
 }
+
+#logo {
+    background-image: url(./image_2021-10-02_162532.png);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 280px;
+    
+}
+
 header {
-    height: 5vh;
-    background-color: #554971;
-    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10vh;  
 }
 
 ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    justify-content: space-between;
-    height: 100%;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+
 }
 
-h1 {
-    letter-spacing: 0.1em;
-    margin-left: 10px;
+a {
+    text-decoration: none;
+    color: currentColor;
+    position: relative;
 }
 
-nav {
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
+a::after {
+    content: "";
+    position: absolute;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20%;
+    width: 0%;
+    left: 0%;
+    bottom: 0%;
+    transition: width 330ms ease-in-out;
 }
 
-li {
+a:hover::after{
+    width: 100%;
+}
+
+section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 20px;
-    
-    letter-spacing: 0.07em;
-    font-size: 14px;
-}
-a {
-    text-decoration: none;
-    font-style: none;
-    position: relative;
-    display: inline-block;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #63768D;
-    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
 }
 
-a:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    left: 0;
-    bottom: 0;
-    background-color: #63768D;
-    transform: scaleX(0);
-    transition: transform 330ms ease-in-out;
-    transform-origin: left;
+section.app {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-a:hover::after {
-    transform: scaleX(1);
+section.app-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
 
+section.app-reverse p {
+    padding-right: 10%;
+    padding-left: 10%;
 
+}
+
+section.app p {
+    padding-right: 10%;
+    padding-left: 10%;
+
+}
+
+h1 {
+    width: 30%;
+    font-size: 2em;
+    text-align: center;
+}
+
+h2 {
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 2em;
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+}
+
+h2#netflix {
+    color: red;
+}
+
+h2#earth {
+    color: blue;
+}
+
+h2#dokkan {
+    color: yellowgreen;
+}
+
+button {
+    margin-right: 4px;
+    padding: 10px
 }
