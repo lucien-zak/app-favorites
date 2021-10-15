@@ -1,0 +1,138 @@
+body {
+    margin: auto 0;
+    background-color: black;
+    color: white;    
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    height: 10vh;
+    width: 100vw;
+}
+
+#titre {
+    margin: 0 10%;
+    color: red;
+
+}
+
+
+#btninscription {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50%;
+        margin: 0 5%;
+        background-color: red;
+        border-radius: 5%;
+        width: 35%;
+        transition: all 660ms ease-in-out;
+        justify-self: flex-end;
+        overflow: hidden;
+
+}
+
+#btninscription::after {
+    content: "";
+    position: absolute;
+    height: 1000px;
+    background-color: white;
+    width: 0%;
+    transition: all 660ms ease-in-out;
+    transform: rotate(25deg);
+}
+
+#btninscription:hover::after {
+    width: 400px;
+    border-radius: 10%;
+}
+
+#btninscription:hover {
+    color: red;
+    transform: scale(1.2);
+
+
+}
+
+#inscr {
+    z-index: 1;
+}
+
+#lnetflix {
+    width: 25%;
+    height: 20%;
+    margin: auto 5%;
+}
+
+
+#premierepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+#deuxiemepage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 10%;
+}
+
+#troisiempage {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: auto 10%;
+}
+
+
+p {
+    text-align: justify;
+}
+
+img {
+    width: 45%;
+    transition: transform 330ms ease-in-out;
+}
+img:hover {
+    transform: scale(1.2);
+}
+
+#divbackground {
+    position: absolute;
+    z-index: -1;
+}
+
+#background {
+    width: 100%;
+    height: 90vh;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

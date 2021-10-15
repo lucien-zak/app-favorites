@@ -184,3 +184,11 @@ span {
 #netflix article {
     margin-top: 10%;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    background-color: turquoise;
+}

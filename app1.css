@@ -1,0 +1,155 @@
+@font-face {
+	font-family: "dbz-font";
+	src: url('./police/Saiyan-Sans.ttf');
+     }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    margin : 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3A1772;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+nav {
+    position: fixed;
+    height: 8vh;
+    top: 0;
+    width: 100%;
+    background-color: #D741A7;
+    opacity: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    color: #5398BE;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    padding: 10px 30px 10px 30px;
+}
+
+main {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: #5398BE ;
+    width: 60%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+    width: 25%;
+    gap: 10vh
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 0%;
+}
+
+
+h1 {
+    text-align: center;
+    width: 100%;
+}
+
+table {
+    height: 30%;
+    background-color:#5398BE;
+
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+th {
+    width: 100%;
+}
+
+td:nth-child(1) {
+    text-align: left;
+    font-weight: bold;
+    margin: auto 10px;
+}
+
+td:nth-child(2) {
+    text-align: right;
+    font-style: italic;
+    margin: auto 10px;
+
+}
+
+#rn {
+    background-color: lightcyan;
+}
+
+.photoshapegauche {
+    margin: 10px;
+    float: left;
+    shape-outside: url(https://image.noelshack.com/fichiers-sm/2015/43/1445526019-9017-noelshack-capture-d-ecran.png);
+  }
+
+span {
+    margin: 10px 10px;
+    text-align: justify;
+}
+
+.photoshapedroite {
+    margin: 10px; 
+    float: right;
+    shape-outside: url(https://image.noelshack.com/fichiers-sm/2015/43/1445526019-9017-noelshack-capture-d-ecran.png);
+  }
+
+li {
+    transition: all 0.3s;
+}
+
+li:hover  {
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    background-color: turquoise;
+}

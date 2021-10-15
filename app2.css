@@ -1,0 +1,176 @@
+li {
+    transition: all 0.3s;
+}
+
+li:hover  {
+    background-color: grey;
+    transform: scale(1.2);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    opacity: 100%;
+    font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    background-color: turquoise;
+    bottom: -100vh;
+    position: absolute;
+    width: 100vw;
+}
+
+body {
+    margin : 0;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(58, 58, 58);
+
+}
+
+nav {
+    position: fixed;
+    height: 8vh;
+    top: 0;
+    width: 100%;
+    opacity: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+    display: flex;
+    color: #5398BE;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+li {
+    padding: 10px 30px 10px 30px;
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.photo1, .photo2 {
+    width: 100%;
+    height: 100%;
+}
+
+.photo1 {
+    position: absolute;
+    animation-name: test1;
+    animation: anim1 20s infinite;
+}
+
+.photo2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    animation: anim2 20s infinite;
+}
+
+
+@keyframes anim1 {
+    0% { }
+    50% { transform: scale(1.2); }
+    70% { opacity: 0%; }
+    100% { opacity: 100%; }
+  }
+
+  @keyframes anim2 {
+    0% { }
+    50% { }
+    70% { transform: scale(1.2); }
+    100% { }
+  }
+
+  @keyframes titre {
+       0% {}
+       70% {transform:scale(1.2);}
+       100% {transform:scale(1);}
+  }
+
+  main{
+      width: 100vw;
+      height: 100vh;
+  }
+  
+  #premierepage {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.4em;
+    margin: 0 0;
+  }
+
+  h1 {
+      color: white;
+      animation : titre 20s infinite;
+      margin: 0 100px;  
+      position: absolute;
+      top : 50%
+  }
+
+  h2 {
+      color: white;
+      text-align: center;
+  }
+
+
+  #secondepage {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      gap: 10%;
+      height: 100vh;
+  }
+
+  #conteneur {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0px 3%;
+    transition: all 330ms ease-in-out;
+  }
+
+  .icon {
+      align-self: flex-start;
+      justify-self: flex-start;
+  }
+
+  p {
+      align-self: flex-end;
+      justify-self: flex-end;
+      text-align: justify;
+  }
+
+  .box:hover {
+      transform: scale(1.2);
+  }
